@@ -1,14 +1,13 @@
 # Desarrollo_Web
 
-Par poder realizar este tipo de proyectos se tuvo en cuenta diferentes formas de desarrollo que se van presentando uno
+Par poder realizar este tipo de proyectos "Desarrollo Web Completo con HTML5, CSS3, JS, AJAX, PHP y MySQL" se tuvo en cuenta diferentes formas de desarrollo que se van presentando uno
 tras otro con el objetivo principal de que sea más fácil de entender este. así mismo se presentan una serie de pasos por
 cada función de desarrollo.
 
-SECCIÓN PRIMERA:
 Los 4 proyectos principales de este curso los puedo resumir de la siguiente manera:
 Primero: Proyecto inicial una especie de DevWebCamp o una conferencia.
 
-INTRODUCCIÓN:
+INTRODUCCIÓN AL PROYECTO FINAL.
 Inicialmente, este tendrá un registro para que el usuario pueda ingresar los datos respectivos como es normal en todo tipo de plataformas que exigen ingresar unos datos específicos para poder interactuar con nuestra página; o sí ya se tiene una cuenta se podrá iniciar sesión desde la opción iniciar sesión.
 
 Seguidamente, en la parte intermedia de la página se encuentra una barra de navegación para que realice la opción correspondiente de cada ventana entre eventos, paquetes, workshops, conferencias comprar pasaje y por ende cada ventana u opción tendrá su propia descripción. Ahora sí nos dirigimos un poco más hacia abajo observaremos un slider, que nos permitirá tener una gama de opciones de eventos.
@@ -41,9 +40,19 @@ Como es obvio, se inicia la sesión con el usuario registrado anteriormente y es
 
 Nuevamente, se tiene la opción en los planes de pago realizarlo por PayPal, tarjeta de crédito y/o débito; presionando en el botón de pagos expandiendo el respectivo formulario en donde se deben de ingresar los respectivos datos como es de costumbre en este tipo de transacciones. Como lo argumenté se tiene la opción de cancelar el pago por PayPal y al presionar directamente sobre este y lo normal nos pide iniciar sesión del registro en PayPal; es lógico que para esta actividad académica no ingresaremos dinero real; pero es la simulación exacta de lo que se hace con la plataforma PayPal.
 
-Se podrá observar que, nos lleva hacia nuestra página y es aquí en donde se puede elegir hasta cinco eventos para asistir de forma presencial; y se tiene la opción de seleccionar un regalo, por ejemplo un paquete de stickers o una camiseta del evento y para el tipo de persona que desee obtener, o sea sí es hombre o mujer.
+Se podrá observar que, nos lleva hacia nuestra página y es aquí en donde se puede elegir hasta cinco eventos para asistir de forma presencial; y se tiene la opción de seleccionar un regalo, por ejemplo un paquete de stickers o una camiseta del evento y para el tipo de persona que desee obtener, o sea sí es hombre o mujer. Con sus respectivas validaciones y de inmediato ya el usuario puede empezar a ingresar las conferencias que sean de su interés, permitiendo seleccionar los cinco eventos y no podrá seleccionar unos más.
+
+Otro aspecto a tener en cuenta es el manejo de la base de datos que nos permitirá ver reflejado el dinero virtual de los pagos realizados para el evento DewebCam y que ha sido ingresado a la cuenta de PayPal, es importante este punto debido a que da una exactitud del dinero ingresado a la cuenta del organizador del evento y además de las comisiones que cobra la plataforma PayPal.
 
 RESUMEN:
-Esta página puede ser muy útil, llegado el caso sí se quiere crear un sistema para un doctor y agendar sus citas y/o sí se quiere elaborar el calendario de vacaciones para empresa donde labores en la intranet, también, se puede aprovechar de esta clase de página y el código se puede impolementar en diferentes escenarios. Es muy común hoy en día ver este tipo de proyectos, incluso sí se quiere crear un CLON de Airbn va a ser de gran utilidad este código.
+Esta página puede ser muy útil, llegado el caso sí se quiere crear un sistema para un doctor y agendar sus citas y/o sí se quiere elaborar el calendario de vacaciones para empresa donde labores en la intranet, también, se puede aprovechar de esta clase de página y el código se puede impolementar en diferentes escenarios. Es muy común hoy en día ver este tipo de proyectos, incluso sí se quiere crear un CLON de Airbn va a ser de gran utilidad este código. Se observa que, esta página tiene una funcionalidad muy precisa para que no tenga margén de errores.
 
-Se observa que, esta página tiene una funcionalidad muy precisa para que no tenga margén de errores.
+INTRODUCCIÓN AL PROYECTO Desarrollo Web Completo con HTML5, CSS3, JS, AJAX, PHP y MySQL.
+
+Inicialmente, este proyecto ya es el primero que incluye el lenguaje de programación en el Backend estaremos haciendo PHP en donde almacenamos y mostramos información de una base de datos. Entonces este proyecto ya va a ser un poco más complejo; debido a que estaremos creando un proyecto para un negocio de bienes raices, en donde se va a poder anunciar sus propiedades que tienen ne venta.
+
+En cuanto a la arquitectura que utilizaremos para elaborar este proyecto, estaremos creando un framework MVC (Model view Controller) de igual manera, estaremos creando todo el código, no utiliza un framework, nosotros mismos lo hacemos; algo importante es que este proyecto pasa primero de funciones o código spaguetti, como se le dice normalmente, después implementamos programación orientada a objetos y después lo llevamos ya a un framework propio; MVC.
+
+Vamos a tener una carpeta SRC como vamos a encontrar en muchos frameworks hoy en día, por ejemplo, No JS, laravel mismo o también de react. además tenemos una separación muy importante aquí en el cual tenemos controladores, tenemos modelos y tambien vistas que es la principal del framework MVC. Todo esto lo estaremos haciendo nosotros mismos. devido a que no utiliza un framework, no utiliza laravel, no utiliza WordPress que no tiene nada que ver con este tema, es código hecho por nosotros mismos.
+
+También, vamos a tener una zona privada como pública con sus respectivas autenticaciones; OJO QUEDAMOS EN EL MINUTO TREINTA Y SEIS.

@@ -1,0 +1,203 @@
+<!-- En esta primera línea nos dice que versión de HTML estamos utilizando, en este caso es la más nueva -->
+<!DOCTYPE html>
+<!-- Tener en cuenta que las etiquetas tienen una apertura y un cierre, por lo tanto las etiquetas que se cierrran 
+debe de tener una barra inclinada; de otra parte aparece el lenguaje que vamos a utilizar para este caso es en 
+ingles lang="en"; pero, se puede cambiar al español en lugar de "en" se coloca "es" y de esa forma lo va 
+a identificar el navegador -->
+<html lang="en">
+  <!-- Después tenemos el head o cabeza; esta parte es la información que le va a dar al navegador con una etiqueta
+de inicio como con la de cierre -->
+
+  <head>
+    <!-- Este meta charset="UTF-8" lo que hace es aplicar un encoding especial para que se muestren acentos con las 
+    tildes, la letra ñ y otros caracteres especiales -->
+    <meta charset="UTF-8" />
+    <!-- la siguiente línea nos dice de que tamaño deben de tener los texto y/o las imágenes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Con esta etiqueta link se puede enlazar con el archivo styles.css -->
+    <link rel="reload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- En esta es el SEO y es una especie de disciplina en la cual los usuarios escriben algo, por ejemplo, en un
+    buscador como Google y puedan encontrar nuestro sitio web. -->
+    <title>Diseñador FreeLancer</title>
+  </head>
+  <!-- Introducción a HTML y el rol de HTML; a partir de aquí es lo va a ver el usuario en su
+navegador, dentro del body se pueden contener imágenes, enlaces, texto, vídeos y mucha información que se necesita 
+para la interacción del navegador y el usuario. -->
+
+  <body>
+    <header>
+      <!-- Creando los textos con HTML; esta etiqueta h1 le indica al navegador que es el 
+        contenido más importante de este sitio web. estos van desde el h1 hasta el h6 -->
+      <h1 class="title">
+        Héctor Gustavo Vallejo Espinosa <span>FreeLancer</span>
+      </h1>
+    </header>
+    <nav>
+      <a href="html/inicio.html" target="_blank" rel="noopener noreferrer"
+        >Inicio</a
+      >
+      <a href="html/nosotros.html" target="_blank" rel="noopener noreferrer"
+        >Nosotros</a
+      >
+      <a href="html/clientes.html" target="_blank" rel="noopener noreferrer"
+        >Clientes</a
+      >
+      <a href="html/contactos.html" target="_blank" rel="noopener noreferrer"
+        >Contactos</a
+      >
+    </nav>
+    <!-- Reglas para utilizar la etiqueta section: sí el primer elemento hijo de esta etiqueta que utilizamos para 
+        agrupar es un header, tenemos que utilizar una etiqueta section casi, casi de fuerza. Ahora, hay una 
+    excepción es sí ese es el contenido principal, utilizarías una etiqueta main. -->
+    <section>
+      <h2>Diseño y Desarrollo Web FreeLancer</h2>
+      <!-- SVG: Scalable Vector Graphic-->
+      <!-- Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="3em"
+        viewBox="0 0 384 512"
+      >
+        <style>
+          svg {
+            fill: #ffc107;
+          }
+        </style>
+        <path
+          d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+        />
+      </svg>
+      <p>Ibagué, Tólima, Colombia.</p>
+      <a href="#" target="_blank" rel="noopener noreferrer">Contactar</a>
+    </section>
+    <main>
+      <h2>Mis Servicios</h2>
+      <section>
+        <h3>Diseño Web</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="5em"
+          viewBox="48 48 512 512"
+        >
+          <!-- Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <style>
+            svg {
+              fill: #dade17;
+            }
+          </style>
+          <path
+            d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3H344c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+          />
+        </svg>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ullam
+          aliquam? Eum perspiciatis quas consequatur porro nisi quis, error
+          doloribus delectus odio ipsum reiciendis impedit assumenda, laboriosam
+          alias voluptatibus saepe.
+        </p>
+      </section>
+      <section>
+        <h3>Aplicaciones Web</h3>
+        <!-- Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="5em"
+          viewBox="0 0 640 512"
+        >
+          <style>
+            svg {
+              fill: #ffc107;
+            }
+          </style>
+          <path
+            d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H304zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H400zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224H64V416H48c-26.5 0-48-21.5-48-48V272c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H576V224h16z"
+          />
+        </svg>
+        <!-- Logotipo de Mac -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="5em"
+          viewBox="0 0 384 512"
+        >
+          <style>
+            svg {
+              fill: #ffc107;
+            }
+          </style>
+          <path
+            d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+          />
+        </svg>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          fugit nesciunt dolores in at, temporibus natus voluptatibus eveniet
+          voluptates quam enim unde totam vitae esse molestias maxime alias nemo
+          quia?
+        </p>
+      </section>
+      <section>
+        <h3>E-Commerce</h3>
+        <!-- Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="5em"
+          viewBox="0 0 576 512"
+        >
+          <style>
+            svg {
+              fill: #ffc107;
+            }
+          </style>
+          <path
+            d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+          />
+        </svg>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+          voluptatum assumenda cupiditate ex iure explicabo, dolores libero
+          voluptas, sint quidem architecto fugiat maiores possimus. A ut
+          suscipit perferendis beatae totam!
+        </p>
+      </section>
+    </main>
+    <section>
+      <h2>Contacto</h2>
+      <form action="">
+        <fieldset>
+          <legend>Contactanos llenando todos los campos</legend>
+          <div>
+            <label for="">Nombre</label>
+            <input type="text" name="" id="" placeholder="Nombres completos" />
+          </div>
+          <br />
+          <div>
+            <label for="">Teléfono</label>
+            <input type="tel" name="" id="" placeholder="Número telefónico" />
+          </div>
+          <br />
+          <div>
+            <label for="">Email</label>
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Correo electrónico"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="">Mensaje</label>
+            <textarea></textarea>
+          </div>
+          <br />
+          <input type="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </section>
+    <footer>
+      <p>Todos los derechos reservados Héctor Gustavo Vallejo Espinosa</p>
+    </footer>
+  </body>
+</html>
+<!-- Y esta última línea nos indica que se cierra la página que proviene de la línea tres (3) de este código -->

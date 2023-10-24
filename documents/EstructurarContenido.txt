@@ -1,0 +1,55 @@
+Lesson sixteen (16):
+
+ESTRUCTURAR EL CONTENIDO CON HTML.
+
+Supongamos que tenemos un lienso en blanco, también supongamos que tenemos una página web en blanco que no tiene 
+nada de información y hemos decidido nombrarla index.html como lo hicimos en la realidad en esta página; Cuando 
+nosotros  visitamos un sitio web, seal el que sea, lo más seguro es que en la parte superior tenga ya sea el nombre 
+del sitio web o el logotipo; y a esa parte superior se le conoce como el header o el head.
+
+Después, tienen el logotipo y tienen la navegación a un lado, pero también algunos sitios tienen la navegación en
+la parte inferior. También, cuando entras, por ejemplo, a una tienda virtual, puede ser que tengan un listado de
+productos, algunas noticias y/o algunas entradas de Blog, etc. Usualmente del lado derecho o del lado izquierdo 
+también tienen información que acompaña al contenido.
+
+Finalmente, en la parte inferior, Usualmente todos los sitios web tienen un footer; esto significa estructurar el 
+contenido, es decir, separar las diferentes secciones de una página; la mayoría de los sitios web tienen como 
+característica de que comparten el header, la navegación y el footer; y solamente la parte de medidas es la que es 
+diferente en esta páginas.
+
+Nuevamente, supongamos que tenemos el index; pero, conforme avanza o crece el proyecto vamos a tener dos (2) más 
+páginas; por ejemplo, una llamada "Nosotros.html" y otra llamada "Contacto.html", por decir algo; cada una con el 
+contenido diferente; estos contenidos también tendrían que estar agrupados en una etiqueta.
+
+Por lo tanto, estructurar es muy similar a agrupar nuestro contenido HTML. Ahora, veamos que etiquetas nos da HTML
+para agrupar el contenido.
+
+Para la parte superior utlizariamos el header tanto con la etiqueta de inicio como de cierre:
+<header></header>
+
+Para la parte inferior utlizariamos el footer tanto con la etiqueta de inicio como de cierre:
+<footer></footer>
+
+Para la parte de navegación tendríamos que utlizar la etiqueta nav tanto de inicio como de cierre:
+<nav></nav>
+
+Para definir el contenido principal tendríamos la etiqueta main tanto de inicio como la de cierre:
+<main></main>
+
+Para definir una sección tendríamos que utlizar la etiqueta section tanto de inicio como la de cierre:
+<section></section> 
+
+Reglas para utilizar la etiqueta section: sí el primer elemento hijo de esta etiqueta que utilizamos para 
+agrupar es un header, tenemos que utilizar una etiqueta section casi, casi de fuerza. Ahora, hay una 
+excepción es sí ese es el contenido principal, utilizarías una etiqueta main. Esta etiqueta se puede utlizar 
+multiples veces.
+
+Para la parte de un blog o noticias podemos utlizar la etiqueta article tanto de inicio como la de cierre:
+<article></article>
+
+En muchos sitios web del lado derecho como del lado izquierdo ponen una barra lateral, esta se conoce como la
+etiqueta ASIDE tanto de inicio como de cierre:
+<aside></aside>
+
+Finalmente, hay otra etiqueta que se llama div y se utiliza cuando no se puede utiliza ninguno de las otras
+etiquetas; no olvidar que tiene un inicio como la de cierre.

@@ -1,3 +1,16 @@
+/* Root se le conoce como pseudo elementos; es decir los elementos que no existen en el código HTML. */
+:root {
+    /* Root es una forma de almacenar variables de CSS que se les conoce como custom properties. */
+    --blanco: #ffffff;
+    /* Se crea una paleta de colores y se finaliza con dos puntos. */
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --fuente-principal: 3.8rem;
+}
+
+/* Al anterior bloque se le conoce como la variables de CSS. */
 html {
     font-size: 62.5%;
 }
@@ -5,14 +18,40 @@ html {
 body {
     /* 1 rem Es = a 10px*/
     font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    /* Con esta línea se le cambia el tipo de fuente a todo el cuerpo de la página. */
+
 }
 
 .title {
     text-align: center;
-    font-size: 3.8rem;
-    color: blue;
+    font-size: var(--fuente-principal);
+    color: var(--oscuro);
 }
 
 .title span {
     font-size: 2rem;
+    color: var(--oscuro);
+}
+
+.contenedor {
+    width: 125rem;
+    margin: 0 auto; /* Esta línea representa el alto hacia arriba, el lado derecho, el alto de abajo y el lado izquierdo. */
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+
+}
+
+.navegacion-principal {
+    padding: 1rem; /* El padding en CSS es una propiedad o relleno que se crea alrededor del contenido de un elemento dentro de los bordes definidos y sirve 
+    para dar formato y diseño a una página web.*/
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none; /* La propiedad CSS text-decoration se usa para establecer el formato de texto a subrayado ( underline ) y suprarrayado 
+    ( overline ), tachado ( line-through ) o parpadeo ( blink ). El subrayado y el suprarrayado son posicionados bajo el texto, mientras la línea a través 
+    de éste se posiciona por encima. */
 }

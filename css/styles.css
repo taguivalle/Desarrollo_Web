@@ -10,9 +10,19 @@
     --fuente-principal: 3.8rem;
 }
 
-/* Al anterior bloque se le conoce como la variables de CSS. */
+/* Al anterior bloque :root se le conoce como la variables de CSS. */
+/* apply a natural box layout model to all elements, but allowing components to change estraído 
+de https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    /* Con el asterisco selecciona todos los elementos del HTML, es como un selector universal */
+    box-sizing: inherit;
 }
 
 body {
@@ -35,8 +45,11 @@ body {
 }
 
 .contenedor {
-    width: 125rem;
-    margin: 0 auto; /* Esta línea representa el alto hacia arriba, el lado derecho, el alto de abajo y el lado izquierdo. */
+    max-width: 125rem;
+    /* Aquí se toman 1200px como máximo. Y solamente sí hay ese espacio disponible. */
+    margin: 0 auto;
+    /* Esta línea representa el alto hacia arriba, el lado derecho, el alto de abajo y el lado 
+    izquierdo. */
 }
 
 .nav-bg {
@@ -45,13 +58,77 @@ body {
 }
 
 .navegacion-principal {
-    padding: 1rem; /* El padding en CSS es una propiedad o relleno que se crea alrededor del contenido de un elemento dentro de los bordes definidos y sirve 
-    para dar formato y diseño a una página web.*/
+
+    display: flex;
+    /* Por medio de este comando nos habilita flex box y a su vez tenemos acceso a nuevas propiedades*/
+    flex-direction: column;
+    /* Por medio de este comando nos permite darle una dirección a la fila. flex-direction: 
+    column; Como su nombre lo indica nos habilita el flex pero en columnas. */
+}
+
+/* Aquí traemos el media querie que acabamos de crear en css.json. */
+/* A partir de este bloque vamos a agregar nuestro primer media query. */
+/* Con esta arroba nos indica que el siguiente código se a ejecutar unicamente en esa condición. */
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+        /* Con este comando nos permite mover el contenido horizontalmente. Aunque 
+        también lo permite hacerlo verticalmente; pero, con otros cambios. */
+        /* justify-content: flex-start; Con este comando lo coloca del lado izquierdo, ya sea que lo quieras al 
+        centro a la derecha o izquierda. */
+    }
 }
 
 .navegacion-principal a {
+    display: block;
+    text-align: center;
     color: var(--blanco);
-    text-decoration: none; /* La propiedad CSS text-decoration se usa para establecer el formato de texto a subrayado ( underline ) y suprarrayado 
+    text-decoration: none;
+    /* La propiedad CSS text-decoration se usa para establecer el formato de texto a subrayado ( underline ) y suprarrayado 
     ( overline ), tachado ( line-through ) o parpadeo ( blink ). El subrayado y el suprarrayado son posicionados bajo el texto, mientras la línea a través 
     de éste se posiciona por encima. */
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    /* El padding en CSS es una propiedad o relleno que se crea alrededor del contenido de un 
+    elemento dentro de los bordes definidos y sirve para dar formato y diseño a una página web. Recordemos que, el 
+    padding se aplica de la orilla hacia adentro, de afuera hacia adentro. */
+}
+
+/*BEM: Bloques de Elemento y Modificadores. O sea con una clase principal. */
+/* UTILITY FIRST: Básicamente creamos una clase con una sola propiedad que describe qué es lo que haría; Por ejemplo,
+sí se quiere centrar el texto, se crea una clase llamada text center y dentro de lo que viene siendo el código 
+CSS para centrar ese texto. */
+/* MÓDULOS:  con estos estilos se definen los estilos principales y después de van seleccionando cada uno de los 
+elementos HTML; Entonces, se define como una clase padre y se van seleccionando todas las etiquetas del código HTML. */
+.navegacion-principal a:hover {
+    /* En este bloque nos dará un efecto al momento de pasar el mouse únicamente donde 
+    se encuentra el enlace o el display-inline. */
+    background-color: var(--primario);
+    color: var(--oscuro);
+    /* Con este comando le damos el color oscuro al texto de los enlaces. */
+}
+
+.hero {
+    /* Aquí se llama la url de nuestra imágen a mostrar en la página. */
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    /* Como su nombre4 lo dice para que no se repita. */
+    background-size: cover;
+    /* Para que tome todo el ancho de la página. */
+    height: 410px;
+    padding: 20px;
+    /* Este padding ya no afecta al diseño que pasa del área de desarrollo o un diseño que se haya 
+    hecho mide 1200px pero se coloca 1100px y después se le agrega padding, ní se hace un poco más grande, ya no va
+    a ser un problema gracias a la línea  box-sizing: border-box. */
+    position: relative;
+}
+/* Posición absoluta y posición relativa; pero el padre .hero debe de tener una posición relativa para que el hijo
+tenga una posición absoluta. */
+.contenido-hero {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 70%);
+    width: 100%;
+    height: 100%;
 }

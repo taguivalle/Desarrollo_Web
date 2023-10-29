@@ -17,6 +17,8 @@ de inicio como con la de cierre -->
   <!-- En esta es el SEO y es una especie de disciplina en la cual los usuarios escriben algo, por ejemplo, en un
     buscador como Google y puedan encontrar nuestro sitio web. -->
   <title>Diseñador FreeLancer</title>
+  <!-- Con este link se inserta el icono en el título de la pagina. -->
+  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
   <link rel="preload" href="css/normalize.css" as="style" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,22 +51,24 @@ para la interacción del navegador y el usuario. -->
   <!-- Reglas para utilizar la etiqueta section: sí el primer elemento hijo de esta etiqueta que utilizamos para 
         agrupar es un header, tenemos que utilizar una etiqueta section casi, casi de fuerza. Ahora, hay una 
     excepción es sí ese es el contenido principal, utilizarías una etiqueta main. -->
-  <section>
-    <h2>Diseño y Desarrollo Web FreeLancer</h2>
-    <!-- SVG: Scalable Vector Graphic-->
-    <!-- Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-    <svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 384 512">
-      <style>
-        svg {
-          fill: #ffc107;
-        }
-      </style>
-      <path
-        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
-    </svg>
-    <p>Ibagué, Tólima, Colombia.</p>
-    <a href="#" target="_blank" rel="noopener noreferrer">Contactar</a>
+  <section class="hero">
+    <div class="contenido-hero">
+      <h2>Diseño y Desarrollo Web <span>FreeLancer</span></h2>
+      <!-- SVG: Scalable Vector Graphic-->
+      <!-- Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+      <svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 384 512">
+        <style>
+          svg {
+            fill: #ffc107;
+          }
+        </style>
+        <path
+          d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+      </svg>
+      <p>Ibagué, Tólima, Colombia.</p>
+      <a href="#" target="_blank" rel="noopener noreferrer">Contactar</a>
   </section>
+  </div>
   <main>
     <h2>Mis Servicios</h2>
     <section>

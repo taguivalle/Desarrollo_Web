@@ -20,8 +20,8 @@ html {
     /* Hack para box model. */
     box-sizing: border-box;
     /* En esta línea vamos definir el Scroll Snap de arriba hacia abajo. la letra y es el eje vertical sí 
-    quisieramos el scroll de forma horizontal escribiríamos la letra x. Esto es para todo el HTML. */
-    scroll-snap-type: y mandatory;
+    quisieramos el scroll de forma horizontal escribiríamos la letra x. Esto es para todo el HTML. 
+    scroll-snap-type: y mandatory;*/
 }
 
 

@@ -2,12 +2,13 @@
 :root {
     /* Root es una forma de almacenar variables de CSS que se les conoce como custom properties. */
     --blanco: #ffffff;
-    /* Se crea una paleta de colores y se finaliza con dos puntos. */
+    /* Se crea una paleta de colores y se finaliza con dos puntos y posteriormente el color. */
     --oscuro: #212121;
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris: #757575;
     --fuente-principal: 3.8rem;
+    --grisclaro: #dfe9f3;
 }
 
 /* Al anterior bloque :root se le conoce como la variables de CSS. */
@@ -16,6 +17,7 @@ de https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    /* Hack para box model. */
 }
 
 *,
@@ -30,28 +32,106 @@ body {
     font-size: 16px;
     font-family: 'Krub', sans-serif;
     /* Con esta línea se le cambia el tipo de fuente a todo el cuerpo de la página. */
-
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%);
+    /* Con esta línea hacemos 
+    un degradado de abajo hacia arriba de forma automática.*/
 }
 
-.title {
+/* En este bloque de la clase sombra se copió el color de la página cssmatic. */
+.sombra {
+    /*-webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,122,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,122,0.54); */
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 122, 0.54);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* En estos heading h1, h2 y h3 se les asigna una regla para la tipografía. */
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+/* Con esta regla se pueden centrar todos los heading h1, h2 y h3. */
+h1,
+h2,
+h3 {
     text-align: center;
+}
+
+.title span {
+    /* text-align: center; */
+    font-size: 2rem;
     font-size: var(--fuente-principal);
     color: var(--oscuro);
 }
 
-.title span {
-    font-size: 2rem;
-    color: var(--oscuro);
-}
-
 .contenedor {
-    max-width: 125rem;
+    max-width: 120rem;
     /* Aquí se toman 1200px como máximo. Y solamente sí hay ese espacio disponible. */
     margin: 0 auto;
     /* Esta línea representa el alto hacia arriba, el lado derecho, el alto de abajo y el lado 
     izquierdo. */
 }
 
+/* Aquí vamos a crear los estilos de la clase boton, */
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem, 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+/* Aquí traemos nuestra mq. */
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+/* Aquí le damos el estilo de un cursor cuando pase sobre el boton. */
+.boton:hover {
+    cursor: pointer;
+}
+
+/* En este bloque le vamos a dar estilos a unas utilidades al flex y la utilidad derecha. */
+.w-sm-100 {
+    width: 100%;
+}
+
+/* Aquí le realizamos un media query al w-sm-100; sm es de small.*/
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+/* En este bloque le damos los estilos al botón enviar. */
+.alinear-derecha {
+    justify-content: flex-end;
+}
+
+/* Aquí tenemos los estilos de la navegación principal. */
 .nav-bg {
     background-color: var(--secundario);
 
@@ -85,9 +165,9 @@ body {
     text-align: center;
     color: var(--blanco);
     text-decoration: none;
-    /* La propiedad CSS text-decoration se usa para establecer el formato de texto a subrayado ( underline ) y suprarrayado 
-    ( overline ), tachado ( line-through ) o parpadeo ( blink ). El subrayado y el suprarrayado son posicionados bajo el texto, mientras la línea a través 
-    de éste se posiciona por encima. */
+    /* La propiedad CSS text-decoration se usa para establecer el formato de texto a subrayado 
+    ( underline ) y suprarrayado ( overline ), tachado ( line-through ) o parpadeo ( blink ). El subrayado y el 
+    suprarrayado son posicionados bajo el texto, mientras la línea a través de éste se posiciona por encima. */
     font-size: 2rem;
     font-weight: 700;
     padding: 1rem;
@@ -117,18 +197,134 @@ elementos HTML; Entonces, se define como una clase padre y se van seleccionando 
     /* Como su nombre4 lo dice para que no se repita. */
     background-size: cover;
     /* Para que tome todo el ancho de la página. */
-    height: 410px;
-    padding: 20px;
-    /* Este padding ya no afecta al diseño que pasa del área de desarrollo o un diseño que se haya 
-    hecho mide 1200px pero se coloca 1100px y después se le agrega padding, ní se hace un poco más grande, ya no va
-    a ser un problema gracias a la línea  box-sizing: border-box. */
+    height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 }
+
 /* Posición absoluta y posición relativa; pero el padre .hero debe de tener una posición relativa para que el hijo
 tenga una posición absoluta. */
 .contenido-hero {
     position: absolute;
-    background-color: rgba(0, 0, 0, 70%);
+    background-color: rgba(0, 0, 0, .7);
+    /* Anterior. */
+    background-color: rgb(0 0 0 /70%);
     width: 100%;
     height: 100%;
+    /* Para alinear todos los elementos dentro de la imagen pero horizontalmente. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Con este atributo se puede centrar el contenido. */
+    /* Para alinear todos los elementos dentro de la imagen pero verticalmente. */
+    justify-content: center;
+    /* Desde el display: flex hasta esta línea se puede utilizar en todos los proyectos
+    para alinear horizontalmente hasta verticalmente. */
 }
+
+.contenido-hero h2,
+.contenido-hero p {
+    color: var(--blanco);
+}
+
+.contenido-hero .ubicacion {
+    display: flex;
+    /* Para alinear horizontalmente. */
+    align-items: flex-end;
+    /* Para alinear hacia abajo. */
+}
+
+/* En este bloque vamos a crearle los estilos css grid. estos nos permite abrir la ubicación y tamaño de los
+elementos de nuestro sitio web (En una área definida), mientras que en flex-box el contenido crece automáticamente. */
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        /* Se tiene acceso a las dos dimensiones; es decir, se puede definir el contenido de izquierda a
+        derecha o de arriba hacia abajo. */
+        grid-template-columns: repeat(3, 1fr);
+        /* Es lo mismo que sí escribieramos 33.3% por cada columna o 1fr 1fr 1fr.*/
+        column-gap: 1rem;
+        /* Con esta línea se tiene control total sobre cuanto quieres que sea la separación de las 
+        columnas. */
+    }
+}
+
+/* En este bloque vamos a crearle los estilos a la clase servicio. */
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.servicio p {
+    line-height: 2;
+    /* Este es el interlineado del parrafo. */
+    text-align: center;
+}
+
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    /* Con esta línea creamos una circunferencia.*/
+    display: flex;
+    /* Este display coloca los iconos uno frente al otro y nos da acceso al justify-content. */
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+/* En este bloque vamos a crearle los estilos al contacto como al formulario. */
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    /* Se utiliza el valor más pequeño. */
+    margin: 0 auto;
+    /* Este margin auto se utiliza en el caso del formulario cuyo padre no es un display flex. */
+    padding: 2rem;
+    /* Y este padding se utiliza para darle el espacio en todas las direcciones. */
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+/* Aquí está el bloque de los campos del formulario. */
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+/* Desde este bloque vamos a darle los estilos a los inputs del formulario. */
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+/* Aquí le damos los estilos al boton enviar. 
+.enviar .boton {
+    width: 100%;
+}*/

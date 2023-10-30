@@ -78,3 +78,17 @@ MEDIA QUERIE:
         flex-direction: row;
     }
 }
+
+================================================================================================================
+COMPARTIR CON OTROS USUARIOS LO APRENDIDO.
+
+Sugerencia: https://www.netlify.com/ 
+
+Esta página es gratuita y además no tiene publicidad; por lo tanto es un servidor de muy buena calidad. como en toda
+plataforma se crea una cuenta con las opciones que allí sugieren; Una vez iniciada la sesión tienes un panel en dónde
+se puede subir la carpeta de tu proyecto.
+
+Posteriormente, en la parte superior de la página aparece una dirección en color verde, damos click y nos deja ver 
+nuestro proyecto ya en un servidor real. Copiamos la URL con otras personas y mostrarles lo que estamos aprendiendo.
+Se observa que el dominio no es muy amigable pero, pero damos click en site settings se puede cambiar el nombre del
+sitio al gusto del usuario;   Domain settings -

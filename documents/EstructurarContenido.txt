@@ -92,3 +92,4 @@ Posteriormente, en la parte superior de la página aparece una dirección en col
 nuestro proyecto ya en un servidor real. Copiamos la URL con otras personas y mostrarles lo que estamos aprendiendo.
 Se observa que el dominio no es muy amigable pero, pero damos click en site settings se puede cambiar el nombre del
 sitio al gusto del usuario;   Domain settings -
+nuestro proyecto ya en un servidor real. Copiamos la URL con otras personas y mostrarles lo que estamos aprendiendo.
